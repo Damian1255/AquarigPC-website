@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+	<title>Contact | AQUARIG</title>
+	<link rel="stylesheet" href="../css/style.css">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../images/Logos/TabIcon.png">
+	<div id="navbar">
+		<div id="navtop">
+			<a href="Signin.html" style="text-decoration: none;">
+				<div id="acc-panel" title="Sign in">
+					<span id="acc"><img src="../images/Icons/Account.png" style="width: 1.3vw" alt="Account"></span>
+					<span id="acc-name">Sign in</span>
+				</div>
+			</a>
+			<a class="div">|</a>
+			<a href="Cart.html" id="cart">
+				<div id="cart-panel" title="Cart">
+					<img src="../images/Icons/Cart.png" style="width: 1.3vw" alt="Cart">
+					<span id="cart-item">(0)</span>
+				</div>
+			</a>
+		</div>
+		<a id="nav-contact" href="Contactus.html"><span id="nav-contact-text" style="">Contact us</span></a>
+  		<a class="nav" href="About.html" title="About">About</a>
+		<a class="nav" href="Gallery.html" title="Gallery">Gallery</a>
+		<a class="nav" href="Offers.html" title="Deals & Offers">Deals & Offers</a>
+		<a class="nav" href="Laptops.html" title="Laptops">Laptops</a>
+  		<a class="nav" href="Desktops.html" title="Desktops">Desktops</a>
+		<a href="Index.html" title="Home"><img class="logo" src="../images/Logos/Logo_White.png" alt="Logo"></a>
+	</div>
+	<div style="background-image: url(../images/Backgrounds/Background2.jpg);background-size:cover;background-position: left;background-repeat: no-repeat;background-position: center;height: 30vw;">
+    	<div style="padding-left: 40px; width: 100%;" class="fade-in">
+        	<div style="width: 85%;position: absolute;text-align: right;margin-top: 8vw;float:right">
+            	<p id="banner-text" style="float: right">Contact</p>
+				<p id="banner-desc" style="float: right;margin: 0 auto">We are here to assist you</p>
+        	</div>
+    	</div>
+	</div>
+	<div class="marquee">
+		<p><b style="color:darkturquoise">Notice: </b>Due to COVID-19, Aquarig is operating and following health guidelines to keep our employees safe. This situation may impact delivery and service levels. We thank you greatly for your patience.</p>
+	</div>
+</head>
+	
+<body onLoad="getCopyright()">
+	<button onclick="topFunction()" id="toTop" title="Go to top"><b>^</b></button>
+	<div class="content" style="width: 100%">
+		<section id="support-contact">
+			<div id="support">
+				<div style="margin: 1vw 3vw; width: 80%;">
+					<p id="support-content-left-title">Submit a<br>Support ticket</p>
+					<p class="support-form-title">Select your issue</p>
+					<select id="support-type" onChange="expandform()">
+						<option value="-">-</option>
+  						<option value="Technical Support">Technical Support</option>
+  						<option value="General Support">General Support</option>
+  						<option value="Refunds/Cancellation">Refund/Cancellation</option>
+  						<option value="Warranty">Warranty</option>
+						<option value="Others">Others</option>
+					</select>
+					<div id="support-form">
+						<p class="support-form-title">Email</p>
+						<input type="email" id="support-email">
+						<p class="support-form-title">Subject/Title</p>
+						<input type="text" id="support-subject">
+						<p class="support-form-title">Description</p>
+						<textarea id="support-desc" rows="4" cols="50"></textarea>
+  						<input type="file" accept="image/*" name="filename" id="support-file">
+						<input type="button" value="Send Ticket" id="support-send">
+					</div>
+					<div>
+						<p class="support-text-title">Support Contacts</p>
+						<p class="support-text">800-125-7653 (24h International)</p>
+						<p class="support-text"><a href="mailto:support@aquarig.com" class="contact-email" style="color: black">support@aquarig.com</a></p>
+					</div>
+					<div>
+						<p class="support-text-title">Troubleshooting Tips</p>
+						<p class="support-prob-title">PC is not starting</p>
+						<p class="support-prob-text">- Check if power cable is connected and power outlet is turned on</p>
+						<p class="support-prob-text">- Check if power supply is switch is on</p>
+						<p class="support-prob-title">PC is on but no display output</p>
+						<p class="support-prob-text">- Check if DP/HDMI/VGA cable is connected to the Computer</p>
+						<p class="support-prob-text">- Check if monitor is turned on</p>
+						<p class="support-prob-text">- Change display cable</p>
+					</div>
+				</div>
+			</div>		
+			<div id="contact">
+				<div style="margin: 1vw 4vw; width: 80%;">
+					<div style="width: 40%;float: left">
+						<p class="contact-info-title">Customer Service</p>
+						<p class="contact-info-text">+65 9654 3532</p>
+						<p class="contact-info-text"><a href="mailto:contact@aquarig.com" class="contact-email">contact@aquarig.com</a></p>
+					</div>
+					<div style="width: 30%;float: left">
+						<p class="contact-info-title">Sales</p>
+						<p class="contact-info-text">+65 9657 5674</p>
+						<p class="contact-info-text"><a href="mailto:sales@aquarig.com" class="contact-email">sales@aquarig.com</a></p>
+					</div>
+					<div style="width: 30%;float: left">
+						<p class="contact-info-title">Corporate Sales</p>
+						<p class="contact-info-text">+65 8567 7564</p>
+						<p class="contact-info-text"><a href="mailto:corpsales@aquarig.com" class="contact-email">corpsales@aquarig.com</a></p>
+					</div>
+					<div style="width: 50%;float: left">
+						<p class="contact-map-title">Address</p>
+						<p class="contact-map-text">107 North Bridge Rd, Singapore 179105</p>
+						<p class="contact-map-text" style="margin: 0 auto;">Funan Mall #02-31/32</p>
+					</div>
+					<div style="width: 40%;float: left">
+						<p class="contact-map-title">Opening Hours</p>
+						<p class="contact-map-text" style="text-transform: capitalize">Mon - Fri | 10am - 6pm</p>
+						<p class="contact-map-text" style="margin: 0 auto;text-transform: capitalize">Sat - Sun | 10am - 8pm</p>
+					</div>
+					<img src="../images/Backgrounds/Map.PNG" id="contact-map" alt="map">
+				</div>
+			</div>
+			<div id="faq">
+				<div style="padding-left: 3vw;">
+					<p style="color: whitesmoke; font-size: 2.3vw; margin-top: 1vw;margin-bottom: 0vw;">Frequently Asked Questions</p>
+					<p class="faq-text" style="margin: 0 auto">Find the most commonly ask questions</p>
+					
+					<p class="faq-title" style="margin-top: 5vw;">How long is the delivery process?</p>
+					<p class="faq-text">Delivery usually takes 3-7 days locally, and 12-14 days internationally.</p>
+					
+					<p class="faq-title">Is it possible to my extended warranty?</p>
+					<p class="faq-text">You may upgrade the warranty within the first thirty days of purchase</p>
+					
+					<p class="faq-title">Do I have to pay shipping fee for warranty repair if I live outside of Singapore?</p>
+					<p class="faq-text">International customers are responsible for all charges relating to shipping of any replacements part or system needing repair.</p>
+					
+					<p class="faq-title">My system is out of warranty do I still get any support?</p>
+					<p class="faq-text">Aquarig provides free life time contact support. So even if your warranty has expired you may call or email our support staff for assistance.</p>
+				</div>
+			</div>
+		</section>
+	</div>
+<script type="text/javascript">
+	//Gets current year for copyright
+	function getCopyright() {
+		var d = new Date();
+		document.getElementById("copyright").innerHTML = "Copyright &copy " + d.getFullYear() + " AQUARIG. All Rights Reserved";
+	}
+	
+	//expand form
+	async function expandform() {
+		var form = document.getElementById("support-type");
+		if (form.value != "-"){
+			document.getElementById("support-form").classList.remove("close-form");
+			document.getElementById("support-form").style.display = "block";
+			document.getElementById("support-form").classList.add("expand-form");
+		}
+		else{
+			document.getElementById("support-form").classList.remove("expand-form");
+			document.getElementById("support-form").classList.add("close-form");
+			await new Promise(r => setTimeout(r, 1000));
+			document.getElementById("support-form").style.display = "none";
+		}
+	}
+	
+	//Top nav bar
+	var navbar = document.getElementById("navbar");
+	var sticky = navbar.offsetTop;
+	window.onscroll = function() {
+		myFunction();
+		scrollFunction();
+	}
+
+	function myFunction() {
+  		if (window.pageYOffset >= sticky) {
+    		navbar.classList.add("sticky")
+  		}
+		else {
+    		navbar.classList.remove("sticky");
+  		}
+	}
+	
+	//To Top button
+	var button = document.getElementById("toTop");
+
+	function scrollFunction() {
+  		if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    		button.style.display = "block";
+			button.classList.add("fade-in")
+  		} else {
+    		button.style.display = "none";
+			button.classList.remove("fade-in")
+		}
+	}
+	function topFunction() {
+  		document.body.scrollTop = 0;
+  		document.documentElement.scrollTop = 0;
+	}
+		
+</script>	
+</body>
+<footer>
+	<div id="footer-content">
+		<div style="float: left;width: 20%;padding-left: 7.3vw">
+			<a href="Index.html" title="Home"><img src="../images/Logos/Logo_White.png" alt="Logo" style="width: 60%"></a>
+			<p class="footer-content" style="width: 80%;color: lightgray;">We are a team of passionate and professional PC builders that strives for perfection.</p>
+		</div>
+		<div style="float: left;width: 18%;">
+			<h1 class="footer-title">Company</h1>
+			<a href="About.html" class="footer-content" title="About Us">About Us</a>
+			<a href="Contactus.html" class="footer-content" title="Contact Us">Contact Us</a>
+			<a href="index.html#panel-right-title" class="footer-content" title="Partners">Partners</a>
+			<a href="About.html#about-award" class="footer-content" title="Awards">Awards</a>
+		</div>
+		<div style="float: left;width: 18%;">
+			<h1 class="footer-title">Browse</h1>
+			<a href="Desktops.html" class="footer-content" title="Desktop">Desktop</a>
+			<a href="Laptops.html" class="footer-content" title="Laptop">Laptop</a>
+			<a href="Gallery.html" class="footer-content" title="Gallery">Gallery</a>
+			<a href="Offers.html" class="footer-content" title="Deals And Offers">Deals And Offers</a>
+		</div>
+		<div style="float: left;width: 18%;">
+			<h1 class="footer-title">Account</h1>
+			<a href="Signin.html" class="footer-content" title="Sign in">Sign in</a>
+			<a href="Register.html" class="footer-content" title="Sign up">Sign up</a>
+		</div>
+		<div style="float: left;width: 18%;margin-bottom: 3vw;">
+			<h1 class="footer-title">Keep in touch</h1>
+			<a href="https://www.facebook.com/" target="_blank" title="Facebook"><img src="../images/Socials/Facebook.png" alt="Facebook" style="width: 12%;float: left;margin: 0 0.2vw"></a>
+			<a href="https://www.instagram.com/" target="_blank" title="Instagram"><img src="../images/Socials/Instagram.png" alt="Instagram" style="width: 12%;float: left;margin:0 0.2vw;border-radius: 1vw;"></a>
+			<a href="https://twitter.com/" target="_blank" title="Twitter"><img src="../images/Socials/Twitter.png" alt="Twitter" style="width: 12%;float: left;margin: 0 0.2vw"></a>
+			<p class="footer-title" style="float: left; width: 100%;margin: 0.8vw auto;margin-top: 1.5vw">newsletter</p>
+			<input type="email" id="newsletter" value="email">
+			<input type="button" id="newsletter-submit" value=">">
+		</div>
+	</div>
+	<div id="footer-bottom" style="">
+		<div style="width: 30%;float: left">
+			<p style="text-align: center;color: white;font-size: 0.9vw" >+65 9654 3532 | <a href = "mailto:contact@aquarig.com" id="footer-email">contact@aquarig.com</a></p>
+		</div>
+		<div style="width: 40%;float: left">
+			<p style="text-align: center;color: white;font-size: 0.9vw" id="copyright"></p>
+		</div>
+		<div style="width: 30%;float: left">
+			<p style="text-align: center;color: white;font-size: 0.9vw"><a href="Terms.html" id="footer-terms">Terms and Conditions</a> | <a href="Privacy.html" id="footer-policy">Privacy Policy</a></p>
+		</div>
+	</div>
+</footer>
+</html>

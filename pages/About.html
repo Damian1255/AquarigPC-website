@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+	<title>About | AQUARIG</title>
+	<link rel="stylesheet" href="../css/style.css">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../images/Logos/TabIcon.png">
+	<div id="navbar">
+		<div id="navtop">
+			<a href="Signin.html" style="text-decoration: none;">
+				<div id="acc-panel" title="Sign in">
+					<span id="acc"><img src="../images/Icons/Account.png" style="width: 1.3vw" alt="Account"></span>
+					<span id="acc-name">Sign in</span>
+				</div>
+			</a>
+			<a class="div">|</a>
+			<a href="Cart.html" id="cart">
+				<div id="cart-panel" title="Cart">
+					<img src="../images/Icons/Cart.png" style="width: 1.3vw" alt="Cart">
+					<span id="cart-item">(0)</span>
+				</div>
+			</a>
+		</div>
+		<a id="nav-contact" href="Contactus.html"><span id="nav-contact-text" style="">Contact us</span></a>
+  		<a class="nav" href="About.html" title="About">About</a>
+		<a class="nav" href="Gallery.html" title="Gallery">Gallery</a>
+		<a class="nav" href="Offers.html" title="Deals & Offers">Deals & Offers</a>
+		<a class="nav" href="Laptops.html" title="Laptops">Laptops</a>
+  		<a class="nav" href="Desktops.html" title="Desktops">Desktops</a>
+		<a href="Index.html" title="Home"><img class="logo" src="../images/Logos/Logo_White.png" alt="Logo"></a>
+	</div>
+	<div style="background-image: url(../images/Backgrounds/Background4.jpg);background-size: cover;background-repeat: no-repeat;background-position: center;height: 30vw">
+    	<div style="padding-left: 40px; width: 100%;" class="fade-in">
+        	<div style="width: 50%;position: absolute;left: 6%;text-align: left;margin-top: 8vw;">
+            	<p id="banner-text">About</p>
+				<p id="banner-desc">Get to know us more</p>
+        	</div>
+    	</div>
+	</div>
+</head>
+	
+<body onLoad="update()">
+	<button onclick="topFunction()" id="toTop" title="Go to top"><b>^</b></button>
+	<div class="content">
+		<section id="about">
+			<p class="about-title" style="margin-bottom: 1.5vw">The Company</p>
+			<div style="float: left;width: 40%;text-align: right;">
+				<img src="../images/Logos/Logo_Black.png" alt="logo" id="about-img">
+			</div>
+			<div style="float:left;width: 60%;text-align: left;">
+				<p class="about-text">AQUARIG was founded in 2018 by a team of hardware enthusiasts, gamers and IT professionals. In the years since our founding, we continue to deliver the top-tier pc experience through a combination of our high standards, craftsmanship, service and value.<br><br>Ever since then we have been improving ourselves and  will continue to in the following years ahead and we'd like you to be a part of it.</p>
+			</div>
+<!--
+		<div style="width: 100%;background-color: whitesmoke;float: left">
+				<p class="about-title" style="margin-bottom: 1.5vw">Our Customers</p>
+				<p class="about-text" style="text-align: center;width: 50%;margin: 2vw auto">We always make sure to put our customers first and provide them with excellent support and a positive experience with Aquarig.</p>
+		</div>
+-->
+		</section>
+		<section id="about-award">
+			<div style="width: 50%;">
+				<p id="about-award-title">Our Awards</p>
+				<p id="about-award-desc">After just 2 years since our founding we have racked up multiple awards from reputable sources.</p>
+				<div style="margin-left: 3.5vw; width: 80%; visibility: hidden" id="award">
+					<a href="https://www.pcgamer.com/" target="_blank"><img src="../images/Awards/PCGamer.png" alt="Award" class="award-img"></a>
+					<a href="https://www.techradar.com/" target="_blank"><img src="../images/Awards/Techradar.png" alt="Award" class="award-img"></a>
+					<a href="https://www.cnet.com/" target="_blank"><img src="../images/Awards/Cnet.png" alt="Award" class="award-img"></a>
+					<a href="https://www.tomsguide.com/" target="_blank"><img src="../images/Awards/TomsGuide.png" alt="Award" class="award-img"></a>
+				</div>
+			</div>
+		</section>
+	</div>
+<script type="text/javascript">
+	//Gets current year for copyright
+	function getCopyright() {
+		var d = new Date();
+		document.getElementById("copyright").innerHTML = "Copyright &copy " + d.getFullYear() + " AQUARIG. All Rights Reserved";
+	}
+	
+	//update dates etc
+	function update() {
+		var year = new Date().getFullYear() - 2018;
+		document.getElementById("about-award-desc").innerHTML = "After just " + year + " years since our founding, we have racked up multiple awards from reputable sources.";
+		getCopyright()
+	}
+	
+	//Top nav bar
+	var navbar = document.getElementById("navbar");
+	var sticky = navbar.offsetTop;
+	window.onscroll = function() {
+		myFunction();
+		scrollFunction();
+		content();
+	}
+
+	function myFunction() {
+  		if (window.pageYOffset >= sticky) {
+    		navbar.classList.add("sticky")
+  		}
+		else {
+    		navbar.classList.remove("sticky");
+  		}
+	}
+	
+	//To Top button
+	var button = document.getElementById("toTop");
+
+	function scrollFunction() {
+  		if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    		button.style.display = "block";
+			button.classList.add("fade-in")
+  		} else {
+    		button.style.display = "none";
+			button.classList.remove("fade-in")
+		}
+	}
+	function topFunction() {
+  		document.body.scrollTop = 0;
+  		document.documentElement.scrollTop = 0;
+	}
+	
+	//Content fade ins
+	function content() {
+		function height(percent){
+			var Height = document.body.scrollHeight - window.innerHeight; 
+			return (Height/100) * percent;
+		}
+		
+		var award = document.getElementById("award");
+ 		if (document.body.scrollTop > height(50) || document.documentElement.scrollTop > height(50)) {
+			award.style.visibility = "visible";
+			award.classList.add("award-slide");
+  		}
+	}
+	
+</script>	
+</body>
+<footer>
+	<div id="footer-content">
+		<div style="float: left;width: 20%;padding-left: 7.3vw">
+			<a href="Index.html" title="Home"><img src="../images/Logos/Logo_White.png" alt="Logo" style="width: 60%"></a>
+			<p class="footer-content" style="width: 80%;color: lightgray;">We are a team of passionate and professional PC builders that strives for perfection.</p>
+		</div>
+		<div style="float: left;width: 18%;">
+			<h1 class="footer-title">Company</h1>
+			<a href="About.html" class="footer-content" title="About Us">About Us</a>
+			<a href="Contactus.html" class="footer-content" title="Contact Us">Contact Us</a>
+			<a href="index.html#panel-right-title" class="footer-content" title="Partners">Partners</a>
+			<a href="About.html#about-award" class="footer-content" title="Awards">Awards</a>
+		</div>
+		<div style="float: left;width: 18%;">
+			<h1 class="footer-title">Browse</h1>
+			<a href="Desktops.html" class="footer-content" title="Desktop">Desktop</a>
+			<a href="Laptops.html" class="footer-content" title="Laptop">Laptop</a>
+			<a href="Gallery.html" class="footer-content" title="Gallery">Gallery</a>
+			<a href="Offers.html" class="footer-content" title="Deals And Offers">Deals And Offers</a>
+		</div>
+		<div style="float: left;width: 18%;">
+			<h1 class="footer-title">Account</h1>
+			<a href="Signin.html" class="footer-content" title="Sign in">Sign in</a>
+			<a href="Register.html" class="footer-content" title="Sign up">Sign up</a>
+		</div>
+		<div style="float: left;width: 18%;margin-bottom: 3vw;">
+			<h1 class="footer-title">Keep in touch</h1>
+			<a href="https://www.facebook.com/" target="_blank" title="Facebook"><img src="../images/Socials/Facebook.png" alt="Facebook" style="width: 12%;float: left;margin: 0 0.2vw"></a>
+			<a href="https://www.instagram.com/" target="_blank" title="Instagram"><img src="../images/Socials/Instagram.png" alt="Instagram" style="width: 12%;float: left;margin:0 0.2vw;border-radius: 1vw;"></a>
+			<a href="https://twitter.com/" target="_blank" title="Twitter"><img src="../images/Socials/Twitter.png" alt="Twitter" style="width: 12%;float: left;margin: 0 0.2vw"></a>
+			<p class="footer-title" style="float: left; width: 100%;margin: 0.8vw auto;margin-top: 1.5vw">newsletter</p>
+			<input type="email" id="newsletter" value="email">
+			<input type="button" id="newsletter-submit" value=">">
+		</div>
+	</div>
+	<div id="footer-bottom" style="">
+		<div style="width: 30%;float: left">
+			<p style="text-align: center;color: white;font-size: 0.9vw" >+65 9654 3532 | <a href = "mailto:contact@aquarig.com" id="footer-email">contact@aquarig.com</a></p>
+		</div>
+		<div style="width: 40%;float: left">
+			<p style="text-align: center;color: white;font-size: 0.9vw" id="copyright"></p>
+		</div>
+		<div style="width: 30%;float: left">
+			<p style="text-align: center;color: white;font-size: 0.9vw"><a href="Terms.html" id="footer-terms">Terms and Conditions</a> | <a href="Privacy.html" id="footer-policy">Privacy Policy</a></p>
+		</div>
+	</div>
+</footer>
+</html>

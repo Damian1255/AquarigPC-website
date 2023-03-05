@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+	<title>Gallery | AQUARIG</title>
+	<link rel="stylesheet" href="../css/style.css">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../images/Logos/TabIcon.png">
+	<div id="navbar">
+		<div id="navtop">
+			<a href="Signin.html" style="text-decoration: none;">
+				<div id="acc-panel" title="Sign in">
+					<span id="acc"><img src="../images/Icons/Account.png" style="width: 1.3vw" alt="Account"></span>
+					<span id="acc-name">Sign in</span>
+				</div>
+			</a>
+			<a class="div">|</a>
+			<a href="Cart.html" id="cart">
+				<div id="cart-panel" title="Cart">
+					<img src="../images/Icons/Cart.png" style="width: 1.3vw" alt="Cart">
+					<span id="cart-item">(0)</span>
+				</div>
+			</a>
+		</div>
+		<a id="nav-contact" href="Contactus.html"><span id="nav-contact-text" style="">Contact us</span></a>
+  		<a class="nav" href="About.html" title="About">About</a>
+		<a class="nav" href="Gallery.html" title="Gallery">Gallery</a>
+		<a class="nav" href="Offers.html" title="Deals & Offers">Deals & Offers</a>
+		<a class="nav" href="Laptops.html" title="Laptops">Laptops</a>
+  		<a class="nav" href="Desktops.html" title="Desktops">Desktops</a>
+		<a href="Index.html" title="Home"><img class="logo" src="../images/Logos/Logo_White.png" alt="Logo"></a>
+	</div>
+	<div style="background-image: url(../images/Backgrounds/banner.jpg);background-size: cover;background-repeat: no-repeat;background-position: center;height: 30vw">
+    	<div style="padding-left: 40px; width: 100%;" class="fade-in">
+        	<div style="width: 50%;position: absolute;left: 6%;text-align: left;margin-top: 8vw;">
+            	<p id="banner-text">Gallery</p>
+				<p id="banner-desc">Collections of PCs built by Aquarig.</p>
+        	</div>
+    	</div>
+	</div>
+</head>
+	
+<body onload="getCopyright()">
+	<button onclick="topFunction()" id="toTop" title="Go to top"><b>^</b></button>
+	<div class="content">
+		<section id="gallery-photos">
+			<div id="gallery-photo-content">
+				<div style="width: 50%;float: left">
+					<div id="gallery-image-selected">
+						<img src="../images/PCs/PC.png" id="gallery-image" style="width: 100%" alt="Image">
+					</div>
+				</div>
+				<div style="width: 50%;float: left;">
+					<p id="gallery-desc">
+						<b style="font-size: 2.3vw;">Spectra</b><br>Stunning and Powerful
+					</p>
+					<a href="Desktops.html#second-row" id="link" class="differences-learnmore" style="width: 100%;margin-top: 0.5vw;margin-bottom: 6.5vw;margin-left: 0.1vw; color: black">View Product<i class="arrow right" style="border-color:black"></i></a>
+					<div class="gallery-image-selection" id="1" onClick="selected(this.id)" style="background-color: darkturquoise">
+						<img src="../images/PCs/PC.png" alt="PC" onClick="switchTo(1)">
+					</div>
+					<div class="gallery-image-selection" id="2" onClick="selected(this.id)">
+						<img src="../images/PCs/PC2.png" alt="PC" onClick="switchTo(2)">
+					</div>
+					<div class="gallery-image-selection" id="3" onClick="selected(this.id)">
+						<img src="../images/PCs/PC3.png" alt="PC" onClick="switchTo(3)">
+					</div>
+					<div class="gallery-image-selection" id="4" onClick="selected(this.id)">
+						<img src="../images/PCs/PC4.png" alt="PC" onClick="switchTo(4)">
+					</div>
+					<div class="gallery-image-selection" id="5" onClick="selected(this.id)">
+						<img src="../images/PCs/PC5.png" alt="PC" onClick="switchTo(5)">
+					</div>
+					<div class="gallery-image-selection" id="6" onClick="selected(this.id)">
+						<img src="../images/PCs/PC6.png" alt="PC" onClick="switchTo(6)">
+					</div>
+					<div class="gallery-image-selection" id="9" onClick="selected(this.id)">
+						<img src="../images/PCs/PC9.png" alt="PC" onClick="switchTo(9)">
+					</div>
+					<div class="gallery-image-selection" id="7" onClick="selected(this.id)">
+						<img src="../images/PCs/PC7.png" alt="PC" onClick="switchTo(7)">
+					</div>
+					<div class="gallery-image-selection" id="8" onClick="selected(this.id)">
+						<img src="../images/PCs/PC8.png" alt="PC" onClick="switchTo(8)">
+					</div>
+					<div class="gallery-image-selection" id="10" onClick="selected(this.id)">
+						<img src="../images/PCs/PC11.png" alt="PC" onClick="switchTo(10)">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="gallery-video">
+			<div class="gallery-video-content" id="gallery-project1">
+				<video loop muted controls autoplay src="../videos/PCvid1.mp4" type="video/mp4" class="video-right">
+  					Your browser does not support video.
+				</video>
+				<p class="gallery-video-title-left">Project Codename: <br>Frost</p>
+				<p class="gallery-video-desc-left">Our latest and greatest, Project Frost. With a custom water loop it keeps the i9-10900K and RTX 3090 frosty while barely making any noises.</p>
+			</div>
+			<div class="gallery-video-content" id="gallery-project2">
+				<video loop muted controls autoplay src="../videos/PCvid2.mp4" type="video/mp4" class="video-left">
+  					Your browser does not support video.
+				</video>
+				<p class="gallery-video-title-right">Project Codename: <br>Aquarius</p>
+				<p class="gallery-video-desc-right">Project Aquarius aims to be a clean and sleek looking while packing a punch, as it is equipped with an i9-9900k and RTX 2080 Ti.</p>
+			</div>
+			<div class="gallery-video-content" id="gallery-project3">
+				<video loop muted controls autoplay src="../videos/PCvid3.mp4" type="video/mp4" class="video-right">
+  					Your browser does not support video.
+				</video>
+				<p class="gallery-video-title-left">Project Codename: <br>Stormtrooper</p>
+				<p class="gallery-video-desc-left">Project Stormtrooper is inspired by the hit movie Star Wars. Equipped with a i7-10700K and RTX 2080 Super, it sure wouldn't miss its shots.</p>
+			</div>			
+		</section>
+		<div style="float: left;width: 100%;background-color: #1E1F24">
+			<p style="color:white;font-size: 1vw;text-align: center;margin: 2.5vw auto;">*Project PCs are not for sale. Although a one-of special build can be made for you by <a href="Contactus.html" style="color: white">contacting us</a>.</p>
+		</div>
+	</div>
+<script type="text/javascript">
+	//Gets current year for copyright
+	function getCopyright() {
+		var d = new Date();
+		document.getElementById("copyright").innerHTML = "Copyright &copy " + d.getFullYear() + " AQUARIG. All Rights Reserved";
+	}
+	
+	
+	//Image Gallery
+	function switchTo(num) {
+		var image = document.getElementById("gallery-image");
+		var desc = document.getElementById("gallery-desc");
+		var link = document.getElementById("link");
+		var images = ["../images/PCs/PC.png","../images/PCs/PC2.png","../images/PCs/PC3.png","../images/PCs/PC4.png",
+					  "../images/PCs/PC5.png","../images/PCs/PC6.png","../images/PCs/PC7.png","../images/PCs/PC8.png","../images/PCs/PC9.png","../images/PCs/PC11.png"];
+		
+		var text = ["<b style=\"font-size: 2.3vw;\">Spectra</b><br>Stunning and Powerful","<b style=\"font-size: 2.3vw;\">Hyrdro Ultimate</b><br>The Ultimate Performance",
+					"<b style=\"font-size: 2.3vw;\">Hyrdro Ghost</b><br>The Ultimate Silent Performance","<b style=\"font-size: 2.3vw;\">Dynamic</b><br>Flashy and Customizable",
+					"<b style=\"font-size: 2.3vw;\">Rouge</b><br>Minimalistic and Powerful","<b style=\"font-size: 2.3vw;\">Aero</b><br>All about the airflow","<b style=\"font-size: 2.3vw;\">Reflex</b><br>Portable and capable",
+					"<b style=\"font-size: 2.3vw;\">Reflex Pro</b><br>The ultimate portable machine","<b style=\"font-size: 2.3vw;\">Focal</b><br>Quiet but Powerful","<b style=\"font-size: 2.3vw;\">Traveller</b><br>Lightweight and Portable"];
+		var links = ["Desktops.html#second-row","Desktops.html#third-row","Desktops.html#third-row","Desktops.html#second-row",
+					  "Desktops.html#first-row","Desktops.html#first-row","Laptops.html#first-row","Laptops.html#first-row","Desktops.html#forth-row","Laptops.html#second-row"];
+		
+		image.src = images[num-1];
+		desc.innerHTML = text[num-1];
+		link.href = links[num-1];
+	}
+	
+	//Selected color
+	function selected(id) {
+		for (var i = 1; i <= 10;i++){
+			document.getElementById(i).style.backgroundColor = "whitesmoke";
+			document.getElementById(i).removeAttribute("style");
+		}
+		document.getElementById(id).style.backgroundColor = "darkturquoise";
+	}
+	
+	//Top nav bar
+	var navbar = document.getElementById("navbar");
+	var sticky = navbar.offsetTop;
+	window.onscroll = function() {
+		myFunction();
+		scrollFunction();
+		content();
+	}
+
+	function myFunction() {
+  		if (window.pageYOffset >= sticky) {
+    		navbar.classList.add("sticky")
+  		}
+		else {
+    		navbar.classList.remove("sticky");
+  		}
+	}
+	
+	//To Top button
+	var button = document.getElementById("toTop");
+
+	function scrollFunction() {
+  		if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    		button.style.display = "block";
+			button.classList.add("fade-in")
+  		} else {
+    		button.style.display = "none";
+			button.classList.remove("fade-in")
+		}
+	}
+	function topFunction() {
+  		document.body.scrollTop = 0;
+  		document.documentElement.scrollTop = 0;
+	}
+	
+	//Content fade ins
+	function content() {
+		function height(percent){
+			var Height = document.body.scrollHeight - window.innerHeight; 
+			return (Height/100) * percent;
+		}
+		
+		var project1 = document.getElementById("gallery-project1");
+		var project2 = document.getElementById("gallery-project2");
+		var project3 = document.getElementById("gallery-project3");
+ 		if (document.body.scrollTop > height(10) || document.documentElement.scrollTop > height(10)) {
+			project1.classList.add("fade-in");
+			project1.style.visibility = "visible";
+  		}
+ 		if (document.body.scrollTop > height(30) || document.documentElement.scrollTop > height(30)) {
+			project2.classList.add("fade-in");
+			project2.style.visibility = "visible";
+  		}
+ 		if (document.body.scrollTop > height(50) || document.documentElement.scrollTop > height(50)) {
+			project3.classList.add("fade-in");
+			project3.style.visibility = "visible";
+  		}
+	}
+	
+</script>	
+</body>
+<footer>
+	<div id="footer-content">
+		<div style="float: left;width: 20%;padding-left: 7.3vw">
+			<a href="Index.html" title="Home"><img src="../images/Logos/Logo_White.png" alt="Logo" style="width: 60%"></a>
+			<p class="footer-content" style="width: 80%;color: lightgray;">We are a team of passionate and professional PC builders that strives for perfection.</p>
+		</div>
+		<div style="float: left;width: 18%;">
+			<h1 class="footer-title">Company</h1>
+			<a href="About.html" class="footer-content" title="About Us">About Us</a>
+			<a href="Contactus.html" class="footer-content" title="Contact Us">Contact Us</a>
+			<a href="index.html#panel-right-title" class="footer-content" title="Partners">Partners</a>
+			<a href="About.html#about-award" class="footer-content" title="Awards">Awards</a>
+		</div>
+		<div style="float: left;width: 18%;">
+			<h1 class="footer-title">Browse</h1>
+			<a href="Desktops.html" class="footer-content" title="Desktop">Desktop</a>
+			<a href="Laptops.html" class="footer-content" title="Laptop">Laptop</a>
+			<a href="Gallery.html" class="footer-content" title="Gallery">Gallery</a>
+			<a href="Offers.html" class="footer-content" title="Deals And Offers">Deals And Offers</a>
+		</div>
+		<div style="float: left;width: 18%;">
+			<h1 class="footer-title">Account</h1>
+			<a href="Signin.html" class="footer-content" title="Sign in">Sign in</a>
+			<a href="Register.html" class="footer-content" title="Sign up">Sign up</a>
+		</div>
+		<div style="float: left;width: 18%;margin-bottom: 3vw;">
+			<h1 class="footer-title">Keep in touch</h1>
+			<a href="https://www.facebook.com/" target="_blank" title="Facebook"><img src="../images/Socials/Facebook.png" alt="Facebook" style="width: 12%;float: left;margin: 0 0.2vw"></a>
+			<a href="https://www.instagram.com/" target="_blank" title="Instagram"><img src="../images/Socials/Instagram.png" alt="Instagram" style="width: 12%;float: left;margin:0 0.2vw;border-radius: 1vw;"></a>
+			<a href="https://twitter.com/" target="_blank" title="Twitter"><img src="../images/Socials/Twitter.png" alt="Twitter" style="width: 12%;float: left;margin: 0 0.2vw"></a>
+			<p class="footer-title" style="float: left; width: 100%;margin: 0.8vw auto;margin-top: 1.5vw">newsletter</p>
+			<input type="email" id="newsletter" value="email">
+			<input type="button" id="newsletter-submit" value=">">
+		</div>
+	</div>
+	<div id="footer-bottom" style="">
+		<div style="width: 30%;float: left">
+			<p style="text-align: center;color: white;font-size: 0.9vw" >+65 9654 3532 | <a href = "mailto:contact@aquarig.com" id="footer-email">contact@aquarig.com</a></p>
+		</div>
+		<div style="width: 40%;float: left">
+			<p style="text-align: center;color: white;font-size: 0.9vw" id="copyright"></p>
+		</div>
+		<div style="width: 30%;float: left">
+			<p style="text-align: center;color: white;font-size: 0.9vw"><a href="Terms.html" id="footer-terms">Terms and Conditions</a> | <a href="Privacy.html" id="footer-policy">Privacy Policy</a></p>
+		</div>
+	</div>
+</footer>
+</html>

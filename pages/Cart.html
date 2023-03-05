@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+	<title>Cart | AQUARIG</title>
+	<link rel="stylesheet" href="../css/style.css">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../images/Logos/TabIcon.png">
+	<div id="navbar">
+		<div id="navtop">
+			<a href="Signin.html" style="text-decoration: none;">
+				<div id="acc-panel" title="Sign in">
+					<span id="acc"><img src="../images/Icons/Account.png" style="width: 1.3vw" alt="Account"></span>
+					<span id="acc-name">Sign in</span>
+				</div>
+			</a>
+			<a class="div">|</a>
+			<a href="Cart.html" id="cart">
+				<div id="cart-panel" title="Cart">
+					<img src="../images/Icons/Cart.png" style="width: 1.3vw" alt="Cart">
+					<span id="cart-item">(0)</span>
+				</div>
+			</a>
+		</div>
+		<a id="nav-contact" href="Contactus.html"><span id="nav-contact-text" style="">Contact us</span></a>
+  		<a class="nav" href="About.html" title="About">About</a>
+		<a class="nav" href="Gallery.html" title="Gallery">Gallery</a>
+		<a class="nav" href="Offers.html" title="Deals & Offers">Deals & Offers</a>
+		<a class="nav" href="Laptops.html" title="Laptops">Laptops</a>
+  		<a class="nav" href="Desktops.html" title="Desktops">Desktops</a>
+		<a href="Index.html" title="Home"><img class="logo" src="../images/Logos/Logo_White.png" alt="Logo"></a>
+	</div>
+</head>
+	
+<body onLoad="getCopyright()">
+	<button onclick="topFunction()" id="toTop" title="Go to top"><b>^</b></button>
+	<div class="content">
+		<section id="Cart">
+		<div id="Cart-content">
+			<p id="Cart-title">Your Cart is empty</p>
+			<p id="Cart-desc">Start by adding item(s) to your cart</p>
+			<a href="Desktops.html" class="differences-learnmore" style="margin-top: 1.5vw;">Go to shop <i class="arrow right"></i></a>
+		</div>
+	</section>
+		<section id="Cart-info">
+			<div id="Cart-info-payment">
+			<p class="Cart-info-title">We Accept</p>
+			<img src="../images/Payments/Paypal.svg" alt="Paypal" style="margin-bottom: 1.5vw;">
+			<img src="../images/Payments/Master.svg" alt="Master" style="width: 6%;margin-bottom: 1vw;">
+			<img src="../images/Payments/Visa.svg" alt="Visa" style="width: 6.5%;">
+			<img src="../images/Payments/Amex.svg" alt="Amex" style="width: 5%;margin-bottom: 1vw;">
+		</div>
+			<div id="Cart-info-checkoutinfo">
+			<div style="float: left; width: 33.33%">
+				<p  class="Cart-info-title" style="text-align: left;margin-left: 3.7vw;">Return Policy</p>
+				<p style="margin: 0.5vw auto; font-size: 1vw;width: 75%;text-align: justify">If you’re not happy with your purchase, rest assured, we offer a 7 day return policy that starts from the day you receive your computer. Every desktop ships with a standard 3 year warranty backed with lifetime international based toll free technical support.</p>
+			</div>
+			<div style="float: left; width: 33.33%">
+				<p  class="Cart-info-title" style="text-align: left;margin-left: 3.7vw;">Secure</p>
+				<p style="margin: 0.5vw auto; font-size: 1vw;width: 75%;text-align: justify">All of your information that is submitted over the web to our secure server is protected with a industry safe 128 bit encryption code. All of our servers are certified with a SSL (Secure Server Certificate) and scanned and certified daily by McAfee's HackerSafe service.</p>
+			</div>
+			<div style="float: left; width: 33.33%">
+				<p  class="Cart-info-title" style="text-align: left;margin-left: 3.7vw;">Privacy</p>
+				<p style="margin: 0.5vw auto; font-size: 1vw;width: 75%;text-align: justify">Aquarig values your privacy. We will never share, sell, or rent any of your personal information to any outside party. For more information about how we handle your information, please view our <a href="Privacy.html" target="_blank">Privacy Policy</a>.</p>
+			</div>
+		</div>
+		</section>
+	</div>
+<script type="text/javascript">
+	//Gets current year for copyright
+	function getCopyright() {
+		var d = new Date();
+		document.getElementById("copyright").innerHTML = "Copyright &copy " + d.getFullYear() + " AQUARIG. All Rights Reserved";
+	}
+		
+	//Top nav bar
+	var navbar = document.getElementById("navbar");
+	var sticky = navbar.offsetTop;
+	window.onscroll = function() {
+		myFunction();
+		scrollFunction();
+	}
+
+	function myFunction() {
+  		if (window.pageYOffset >= sticky) {
+    		navbar.classList.add("sticky")
+  		}
+		else {
+    		navbar.classList.remove("sticky");
+  		}
+	}
+	
+	//To Top button
+	var button = document.getElementById("toTop");
+
+	function scrollFunction() {
+  		if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    		button.style.display = "block";
+			button.classList.add("fade-in")
+  		} else {
+    		button.style.display = "none";
+			button.classList.remove("fade-in")
+		}
+	}
+	function topFunction() {
+  		document.body.scrollTop = 0;
+  		document.documentElement.scrollTop = 0;
+	}
+	
+</script>	
+</body>
+<footer>
+	<div id="footer-content">
+		<div style="float: left;width: 20%;padding-left: 7.3vw">
+			<a href="Index.html" title="Home"><img src="../images/Logos/Logo_White.png" alt="Logo" style="width: 60%"></a>
+			<p class="footer-content" style="width: 80%;color: lightgray;">We are a team of passionate and professional PC builders that strives for perfection.</p>
+		</div>
+		<div style="float: left;width: 18%;">
+			<h1 class="footer-title">Company</h1>
+			<a href="About.html" class="footer-content" title="About Us">About Us</a>
+			<a href="Contactus.html" class="footer-content" title="Contact Us">Contact Us</a>
+			<a href="index.html#panel-right-title" class="footer-content" title="Partners">Partners</a>
+			<a href="About.html#about-award" class="footer-content" title="Awards">Awards</a>
+		</div>
+		<div style="float: left;width: 18%;">
+			<h1 class="footer-title">Browse</h1>
+			<a href="Desktops.html" class="footer-content" title="Desktop">Desktop</a>
+			<a href="Laptops.html" class="footer-content" title="Laptop">Laptop</a>
+			<a href="Gallery.html" class="footer-content" title="Gallery">Gallery</a>
+			<a href="Offers.html" class="footer-content" title="Deals And Offers">Deals And Offers</a>
+		</div>
+		<div style="float: left;width: 18%;">
+			<h1 class="footer-title">Account</h1>
+			<a href="Signin.html" class="footer-content" title="Sign in">Sign in</a>
+			<a href="Register.html" class="footer-content" title="Sign up">Sign up</a>
+		</div>
+		<div style="float: left;width: 18%;margin-bottom: 3vw;">
+			<h1 class="footer-title">Keep in touch</h1>
+			<a href="https://www.facebook.com/" target="_blank" title="Facebook"><img src="../images/Socials/Facebook.png" alt="Facebook" style="width: 12%;float: left;margin: 0 0.2vw"></a>
+			<a href="https://www.instagram.com/" target="_blank" title="Instagram"><img src="../images/Socials/Instagram.png" alt="Instagram" style="width: 12%;float: left;margin:0 0.2vw;border-radius: 1vw;"></a>
+			<a href="https://twitter.com/" target="_blank" title="Twitter"><img src="../images/Socials/Twitter.png" alt="Twitter" style="width: 12%;float: left;margin: 0 0.2vw"></a>
+			<p class="footer-title" style="float: left; width: 100%;margin: 0.8vw auto;margin-top: 1.5vw">newsletter</p>
+			<input type="email" id="newsletter" value="email">
+			<input type="button" id="newsletter-submit" value=">">
+		</div>
+	</div>
+	<div id="footer-bottom" style="">
+		<div style="width: 30%;float: left">
+			<p style="text-align: center;color: white;font-size: 0.9vw" >+65 9654 3532 | <a href = "mailto:contact@aquarig.com" id="footer-email">contact@aquarig.com</a></p>
+		</div>
+		<div style="width: 40%;float: left">
+			<p style="text-align: center;color: white;font-size: 0.9vw" id="copyright"></p>
+		</div>
+		<div style="width: 30%;float: left">
+			<p style="text-align: center;color: white;font-size: 0.9vw"><a href="Terms.html" id="footer-terms">Terms and Conditions</a> | <a href="Privacy.html" id="footer-policy">Privacy Policy</a></p>
+		</div>
+	</div>
+</footer>
+</html>
